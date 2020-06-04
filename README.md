@@ -2,6 +2,12 @@
 
 Running at [http://whispering-spire-64130.herokuapp.com/donations/](http://whispering-spire-64130.herokuapp.com/donations/).
 
+Extended application:
+The submited assignment includes all the extensions about the application.
+(1) Handle the user name error by creating a new donor with the given name and indicated donation.
+(2) Allow all visitors to view the page of donations but ask for login if not logged in.
+(3) Add a page "view donation" that allows visitors to view all donations from a single donor. 
+
 ## Your Task
 
 Your task is to:

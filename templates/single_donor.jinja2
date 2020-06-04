@@ -1,0 +1,28 @@
+{# single_donor.jinja2 #}
+{% extends 'base.jinja2'%}
+
+{% block subtitle %}View Donations for donor{% endblock subtitle %}
+
+{% block content %}
+<ul>
+    <li>
+    <form method='GET'>
+       {% for donor in donors %}
+         <input type='checkbox' name='name' value='{{donor.name}}'>
+         <label for='name'>{{donor.name}}</label><br>
+       {% endfor %}
+       <br>
+       <input type='submit' name='submit_button' value='submit'>
+    </form>
+    </li>
+    <br><br>
+    <li>
+        {% if list %}
+        <p> All the Donations made by Donor: {{donor_name}} </p>
+            {% for donation in all_donation %}
+                {{donation.value}} <br>
+            {% endfor %}
+        {% endif %}
+    </li>
+</ul>
+{% endblock content %}

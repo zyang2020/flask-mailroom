@@ -1,0 +1,18 @@
+{# login.jinja2 #}
+{% extends 'base.jinja2' %}
+
+{% block subtitle %}Log In{% endblock subtitle %}
+{% block content %}
+<form method='POST'>
+    {% if error %}<p>{{error}}</p>{% endif %}
+    <label for='user_name'>UserName:</label> <input type='text' id='username'
+     name='username'><br>
+    {# Note: the type for password field is 'password' which will inform
+       the browser to use the 'bullet' style of input field that hides the
+       password as a user is typing it.
+    #}
+    <label for='password'>Password:</label> <input type='password' id='password'
+    name='password'><br>
+    <input type='submit' value='login'>
+</form>
+{% endblock content %}
